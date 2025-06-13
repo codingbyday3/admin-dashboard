@@ -94,3 +94,26 @@ ul{
   border-radius: 30px;
 }
 
+.search-bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-bar div:last-child{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.dashboard-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+}
+
+.dashboard-header > div{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
