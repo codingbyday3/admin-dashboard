@@ -54,19 +54,24 @@ h1, h2, h3, h4, h5, h6 {
 main{
   display: grid;
   grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 1fr 4fr;
   height: 100%;
 }
+
 
 .projects-container,
 .search-bar,
 .dashboard-header{
   grid-column: 2 / 3;
 }
+.projects-container{
+  grid-row: 3 / 4;
+}
 
 .side-bar{
   display: grid;
-  grid-template-rows: 1fr 3fr 2fr 1fr;
-  gap: 30px;
+  grid-row: 1 / 4;
+  grid-template-rows: 1fr 2fr 1fr 1fr;
 }
 
 .grid-row-span-1{
@@ -81,3 +86,11 @@ ul{
   width: 20px;
   height: 20px;
 }
+
+.profile-pic{
+  width: 30px;
+  height: 30px;
+  background-color: aqua;
+  border-radius: 30px;
+}
+
